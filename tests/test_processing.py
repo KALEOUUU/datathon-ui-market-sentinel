@@ -36,7 +36,7 @@ class TestTextProcessing(unittest.TestCase):
         self.assertIsNone(parse_indonesian_date("tanggal tidak valid"))
 
     def test_source_aware_preprocessing_separates_dateline_and_quotes(self):
-        article = 'AKARTA, KOMPAS.com - Hevearita Gunaryanti Rahayu (HGR) alias MbakIta berkata, "Situasi aman."'
+        article = 'JAKARTA, KOMPAS.com - Hevearita Gunaryanti Rahayu (HGR) alias MbakIta berkata, "Situasi aman."'
         result = extract_article_structure(article, "kompas")
         self.assertEqual(result["dateline_location"], "JAKARTA")
         self.assertEqual(result["dateline_publisher"], "kompas.com")

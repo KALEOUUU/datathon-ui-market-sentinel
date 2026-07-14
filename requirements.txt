@@ -1,0 +1,8 @@
+# Runtime dependencies for the Parquet-only Days 1-4 pipeline.
+pandas==3.0.3
+pyarrow==25.0.0
+beautifulsoup4==4.15.0
+lxml==6.1.1
+matplotlib==3.11.0
+seaborn==0.13.2
+requests==2.32.5

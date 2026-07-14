@@ -1,0 +1,40 @@
+# Local agent material
+/.agents/
+/.codex/
+
+# Credentials and local environments
+.env
+.env.*
+.venv/
+venv/
+
+# Python/tooling cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# OS/editor noise
+.DS_Store
+*.swp
+
+# Downloaded external datasets; restore with `python3 -m src.download_data`
+/data/external/kaggle_news/*.csv
+/data/external/indonesian_hoax_news/
+/data/external/inset_lexicon/.git/
+
+# Rebuildable pipeline outputs
+/data/processed/articles.parquet
+/data/processed/dataset_manifest.json
+/data/processed/eda/
+/data/processed/features/
+/data/processed/labels/annotation_template*.csv
+/data/processed/labels/*manifest.json
+/data/processed/labels/label_availability_audit.json
+/data/processed/labels/finalized_single_annotator_labels.parquet
+
+# Temporary files
+*.tmp
+/data/interim/
